@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 
 body{
@@ -14,38 +14,47 @@ header{
 }
 
 h1{
-    padding: 5px;
+    padding: 20px;
     font-size: 2em;
     color: #192226;
 }
 
+a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 h3{
     font-size: 1em;
+    margin: 5px 0;
     padding: 5px;
     text-align: left;
 }
 
-p{
-    padding: 5px;
-    text-align: right;
-    color: red;
+small{
+    text-decoration: line-through;
 }
 
+strong{
+    display: block;
+    color: red;
+    text-align: right;
+}
+
+article ul{
+    margin: 10px;
+    padding: 5px;
+    color: grey;
+}
 
 img{
     border: 5px outset;
-    padding: 5px;
 }
 
 nav ul li {
     display: inline-block;
-    padding: 10px;
-}
-
-nav ul li a{
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
+    padding: 15px;
 }
 
 section{
@@ -62,27 +71,26 @@ section article img{
     width: 100%;
 }
 
-/* Responsive - Celular */
+/* Responsive - Tablet */
 
 @media (min-width: 426px){
     body{
-        background-color: blue;
+        background-color: whitesmoke;
     }
+
+    section{
+        overflow: hidden;
+    }
+
     section article{
         width: 40%;
         margin-left: 5%;
         margin-right: 5%;
         float: left;
     }
-    section{
-        overflow: hidden;
-    }
-    nav{
-        text-align: center;
-    }
 }
 
-/* Responsive - Tablet */
+/* Responsive - Notebook */
 
 @media (min-width: 769px){
     section article{
